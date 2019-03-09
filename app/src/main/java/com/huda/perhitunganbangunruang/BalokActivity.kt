@@ -32,6 +32,14 @@ class BalokActivity : AppCompatActivity() {
                 txtHasil_balok.setText(c.toString())
             }
         }
+        btn_hapus_balok.setOnClickListener {
+            txtNumber1.setText("")
+            txtNumber2.setText("")
+            txtNumber3.setText("")
+            txtNumber4.setText("")
+            txtNumber5.setText("")
+            txtHasil_balok.setText("")
+        }
     }
     fun hasil(a: Double, b: Double, c: Double): Double {
         return a * b * c

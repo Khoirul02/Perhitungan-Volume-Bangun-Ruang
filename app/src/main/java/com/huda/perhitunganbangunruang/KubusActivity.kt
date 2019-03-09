@@ -28,6 +28,11 @@ class KubusActivity : AppCompatActivity() {
                 txtHasil_kubus.setText(b.toString())
             }
         }
+        btn_hapus_kubus.setOnClickListener {
+            txtNumber6.setText("")
+            txtNumber7.setText("")
+            txtHasil_kubus.setText("")
+        }
     }
     fun hasil( a : Double):Double{
         return a * a * a
